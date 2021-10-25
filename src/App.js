@@ -1,11 +1,26 @@
-import React from 'react'
-import Register from './components/Register'
+import React , { useEffect , useState } from 'react'
+import Router from './components/helper/Router'
+import WebFont from 'webfontloader'
 
 const App = (props) => {
+
+  const [isLoggedIn,setIsLoggedIn]=useState( false)
+
+  useEffect(() => {
+      WebFont.load({
+              google: {
+                  families: ['Roboto','sans-serif']
+              }
+      });
+  }, []); 
+
+  const handleLoginStatus=()=>{
+    setIsLoggedIn(!isLoggedIn)
+  }
+
   return (
     <div>
-      <h2>App</h2>
-    
+          <Router isLoggedIn={isLoggedIn} handleLoginStatus={handleLoginStatus} />
     </div>
   )
 }
