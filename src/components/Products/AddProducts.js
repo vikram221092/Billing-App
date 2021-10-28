@@ -1,6 +1,7 @@
 import React , { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import Swal from 'sweetalert2'
+import ProductsForm from './ProductsForm'
 import { addProductsAction } from '../../REDUX/Actions/productsActions'
 
 const AddProducts = (props) => {
