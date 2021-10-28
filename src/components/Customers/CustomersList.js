@@ -5,6 +5,7 @@ import { TextField ,TablePagination,TableContainer,Paper,Table,TableRow,TableBod
 import {  SearchFunction ,sortByAscName,sortByDescName } from './Search'
 import Select from 'react-select'
 import CustomersListItem from './CustomersListItem'
+import { allCustomerListAction } from '../../REDUX/Actions/customersActions'
 
 const useStyles = makeStyles({
     table: {

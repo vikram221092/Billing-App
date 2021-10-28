@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid , Box } from '@material-ui/core'
-
+import AddCustomer from './AddCustomer'
 import CustomersList from './CustomersList'
 
 const useStyles = makeStyles((theme) => ({
