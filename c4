@@ -1,0 +1,71 @@
+[33mcommit fccb791bb7322b27c82413b0844b4de889243e71[m[33m ([m[1;36mHEAD -> [m[1;32mproduct-page[m[33m)[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Thu Oct 28 17:11:10 2021 +0530
+
+    Product List Added
+
+[33mcommit b2eb4f4788c32704007bdaadbe4114b25ff1d9e7[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Thu Oct 28 16:50:31 2021 +0530
+
+    product form added
+
+[33mcommit 14798710ad3a566616b1dca5ec0e85b0e15cdf6e[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Thu Oct 28 16:18:30 2021 +0530
+
+    add Product added
+
+[33mcommit 0378301987355bf00ad92e1bc41910632207e7ae[m[33m ([m[1;32mcustomers-page[m[33m)[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Thu Oct 28 15:35:37 2021 +0530
+
+    Add customer comp dded
+
+[33mcommit 60a4f24a87d6675a43d452bde296816b4bbf9c8c[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Tue Oct 26 15:13:55 2021 +0530
+
+    Customers List Item Added
+
+[33mcommit 6ba050652c10bb45f9e195621f8998c142bf9c08[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Tue Oct 26 14:40:30 2021 +0530
+
+    CustomersList Added
+
+[33mcommit 32c2a0f1ca6741d2205079f11b673b6c0bcfbc38[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Tue Oct 26 12:52:20 2021 +0530
+
+    customers form created
+
+[33mcommit 17cc300492ad3649fd6fe6eada0ee40406c3a4af[m[33m ([m[1;32mmaster[m[33m)[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Tue Oct 26 03:45:34 2021 +0530
+
+    Route to all Pages
+
+[33mcommit 29688c324627de0b6737b5ebec82d1fa0537f870[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Tue Oct 26 02:46:22 2021 +0530
+
+    register page completed
+
+[33mcommit c608a92cda5b6218d4c84f462b62965f2834acb4[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Tue Oct 26 01:56:54 2021 +0530
+
+    User Detail validation
+
+[33mcommit bb068d4aae959cb6054e3e23a3421237ee00371a[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Tue Oct 26 01:37:45 2021 +0530
+
+    initial commit
+
+[33mcommit e1bb03fd15d60c62bf0b8e59dbf2a006d82a1e61[m
+Author: vikram <vikramscvikram@gmail.com>
+Date:   Tue Oct 26 00:18:59 2021 +0530
+
+    Initialize project using Create React App
