@@ -1,6 +1,7 @@
 import React , { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { addBillAction } from '../../REDUX/Actions/billsActions'
+import { addBillsAction } from '../../REDUX/Actions/billsActions'
+import BillForm from './BillForm'
 import Swal from 'sweetalert2'
 
 const AddBill = ({ customers , products }) => {
