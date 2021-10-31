@@ -3,6 +3,7 @@ import { useDispatch , useSelector } from 'react-redux'
 import { allCustomerListAction } from '../../REDUX/Actions/customersActions'
 import { getAllProducts } from '../../REDUX/Actions/productsActions'
 import AddBill from './AddBill'
+import BillsList from './BillsList'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid , Box } from '@material-ui/core'
 
