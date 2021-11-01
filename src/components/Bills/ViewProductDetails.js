@@ -1,9 +1,9 @@
 import React , { useState , useEffect } from 'react'
 import axios from 'axios'
 import { useSelector } from 'react-redux'
-import moment from 'react-moment'
+import moment from 'moment'
 import ReactTOPdf from 'react-to-pdf'
-import { Box,TableBody,Button,TableHead,TableRow,Typography,Table,TableCell } from '@material-ui/icons'
+import { Box,TableBody,Button,TableHead,TableRow,Typography,Table,TableCell } from '@material-ui/core'
 
 const ViewProductDetails = ({_id,customers,products}) => {
 

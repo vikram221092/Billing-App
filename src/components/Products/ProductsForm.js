@@ -29,6 +29,7 @@ const ProductsForm = ({formSubmission,toggleStatus,isSaved}) => {
             setName('')
             setPrice('')
             toggleStatus()
+           
         }
      },[isSaved,toggleStatus])
 
@@ -72,7 +73,7 @@ const ProductsForm = ({formSubmission,toggleStatus,isSaved}) => {
     return (
         <div style={{margin:'30px'}}>
         <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-               Add Product
+               Add Products
         </Button>
        
         <Dialog  open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
@@ -95,7 +96,7 @@ const ProductsForm = ({formSubmission,toggleStatus,isSaved}) => {
                        Cancel
                    </Button>
 
-                   <Button variant="contained" onClick={handleClose} color="secondary"  type="submit">Add Product</Button>
+                   <Button variant="contained" onClick={handleClickOpen} color="secondary"  type="submit">Add Product</Button>
                </DialogActions>
                </form>
        </Dialog>
