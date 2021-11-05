@@ -17,7 +17,6 @@ const ProductsList = () => {
     
     const [search,setSearch]=useState('')
      const [data,setData]=useState([])
-     const [order,setOrder]=useState('')
      
      const classes = useStyles();
 
@@ -44,70 +43,29 @@ const ProductsList = () => {
           setData(result)
       }
 
-      //sorting
-
-      const handleSelectChange=(item)=>{
-            const res=item.value
-            setOrder(item)             
-            if(res==="asc"){
-              const result= sortByName(data,res)
-              setData(result)
-            }
-            else if(res==="dscn"){
-             const result= sortByDescName(data,res)
-              setData(result)
-            }
-            else if(res==="priceasc"){
-             const result= sortByPrice(data,res)
-             setData(result)
-            }
-            else if(res==="pricedscn"){
-              const result=sortByPriceDenc(data,res)
-              setData(result)
-            }
-      }
-
-      const options=[
-        {value:"asc",label:'Order ASC'},
-        {value:'dscn',label:'Order DSCN'},
-        {value:'priceasc',label:'Price ASC'},
-        {value:"pricedscn",label:'price DSCN'}
-      ]
-
     return (
         <div>
-            <Paper style={{textAlign:'center'}}>
-                  <h1>Total Products-{data.length}</h1>
-                  <br/>
+            <Paper style={{textAlign:'center' , padding:"10px" , backgroundColor:"black" , color:"white"}}>
+                  <h1>Total Products - {data.length}</h1>
                 </Paper>
                 <br/>
-                 <label id="order">Order By</label>
                  
                  <Grid container spacing={3}>
-                      <Grid item xs={6}> 
-                          <Select
-                              placeholder="Select to sort"
-                              options={options}
-                              value={order}
-                              onChange={handleSelectChange}   
-                          />
-                      </Grid>
                       <Grid item xs={6}>
                           <TextField 
-                            placeholder="Enter Term to search"
+                            placeholder="Search Products Here"
                            type="text" 
                            value={search} 
                            onChange={handleChange}/>
     
                       </Grid>
                  </Grid>
-
+                 <br/>
                   { 
                     products.length===0 ?
                      <>
                        <div style={{textAlign:'center'}}>
-                           <img src="https://icons8.com/preloaders/preloaders/1474/Walk.gif" alt="loaded"/>
-                       <h1>Either you Don't have products or data not found</h1>
+                       <h1>Add Products...</h1>
                      </div>
                     </>
                     :

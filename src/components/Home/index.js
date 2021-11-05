@@ -5,7 +5,7 @@ import './style.css'
 const Home = (props) => {
     return (
         <div id = 'HomePage'>
-            <HomePageComp />
+            <HomePageComp  />
         </div>
     )
 }

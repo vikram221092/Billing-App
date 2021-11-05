@@ -2,8 +2,7 @@ import React , { useState , useEffect } from 'react'
 import { useDispatch , useSelector } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles'
 import { TextField ,TablePagination,TableContainer,Paper,Table,TableRow,TableBody,Box, TableCell, TableHead, Grid } from '@material-ui/core'
-import {  SearchFunction ,sortByAscName,sortByDescName } from './Search'
-import Select from 'react-select'
+import {  SearchFunction } from './Search'
 import CustomersListItem from './CustomersListItem'
 import { allCustomerListAction } from '../../REDUX/Actions/customersActions'
 
@@ -15,7 +14,7 @@ const useStyles = makeStyles({
 
 const CustomersList = (props) => {
 
-    const [order,setOrder]=useState('')    
+   
     const [search,setSearch]=useState('')
     const [data,setData]=useState([])
 
@@ -38,22 +37,6 @@ const CustomersList = (props) => {
      },[customers])
     
 
-     //sorting
-
-    const handleSelectChange=(item)=>{
-        const res=item.value
-        setOrder(item)
-        
-        if(res==="asc"){
-            const result= sortByAscName(data,res)
-            setData(result)
-         }
-         else if(res==="dscn"){
-            const result =sortByDescName(data,res)
-            setData(result)
-         }
-    }
-
     // Searching
 
     const handleSearchChange=(e)=>{
@@ -64,11 +47,6 @@ const CustomersList = (props) => {
         setData(result)
     }   
 
-     
-    const options=[
-        { value:"asc", label:"Order ASC"},
-        { value:"dscn",label:"Order DSCE"}
-    ]
     //Pagination
         const handleChangeRowsPerPage = (event) => {
             setRowsPerPage(parseInt(event.target.value, 10));
@@ -81,21 +59,14 @@ const CustomersList = (props) => {
 
     return (
         <div style={{marginLeft:'50px'}} >
-                                <Paper style={{textAlign:'center'}}>
-                   <h1>Total Customer-{data.length}</h1>
-                    <br/>
+                                <Paper style={{textAlign:'center',padding:"8px" , backgroundColor:"black" , color:"white" }}>
+                   <h1>Total Customers - {data.length}</h1>
                 </Paper>
-                <label id="order">Order By</label>
+                <br/>
                 <Grid container spacing={3}>
-                    <Grid item xs={6}  >
-                        <Select
-                            options={options}
-                            value={order}
-                            onChange={handleSelectChange}
-                        />
-                    </Grid>  
+                  
                     <Grid item xs={6}>
-                        <TextField  placeholder="Enter Term to search" type="text" value={search} onChange={handleSearchChange} />
+                        <TextField  placeholder="Search Customers Here" type="text" value={search} onChange={handleSearchChange} />
                     </Grid>   
                 </Grid>
                 <br/>
@@ -103,9 +74,7 @@ const CustomersList = (props) => {
                 customers.length===0 ?
                 <>
                  <div style={{textAlign:'center'}}>
-
-                         <img src="https://icons8.com/preloaders/preloaders/1474/Walk.gif" alt="loaded"/>
-                         <h1>Data not found</h1>
+                         <h1>Add Customers...</h1>
                  </div>
                   
                 </>

@@ -5,7 +5,6 @@ import { registerAction } from '../../REDUX/Actions/userAction'
 import Swal from 'sweetalert2'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid , Box } from '@material-ui/core'
-import './Register.css'
 
 const useStyles = makeStyles((theme) => ({
     root: {

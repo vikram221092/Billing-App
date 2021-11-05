@@ -23,8 +23,15 @@ const Router = (props) => {
 
     const LinkStyle={
         color:'white',
-        margin:'12px',
+        margin:'42px',
         textDecoration:'none',
+        fontSize:"24px",
+    }
+    const LinkStyle1 = {
+        color:'white',
+        margin:'50px',
+        textDecoration:'none',
+        fontSize:"26px",
     }
       useEffect(()=>{
           if(localStorage.getItem('token')){
@@ -34,18 +41,20 @@ const Router = (props) => {
 
     return (
         <div>
-                <AppBar position="static">
+                <AppBar position="static" color= "secondary" >
                 <Toolbar>
                 <Typography variant="h6" style={{flexGrow:1}}>
                     
-                     <Link style={LinkStyle} to="/">BILLING APP</Link>
+                     <Link style={LinkStyle1} to="/"><b>BILLING APP</b></Link>
+
+                     <br/>
                 
                 </Typography>
                     <Typography>
                         {
                             localVAr ?
                             <>
-                                <Link  style={LinkStyle} to="/dashboard">Dashboard</Link>    
+                                <Link  style={LinkStyle} to="/dashboard" >Dashboard</Link>    
                                 <Link style={LinkStyle} to="/customers">Customers</Link>
                                 <Link style={LinkStyle} to="/products">Products</Link> 
                                 <Link style={LinkStyle} to="/bills">Bills</Link>

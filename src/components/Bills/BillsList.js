@@ -38,31 +38,7 @@ const BillsList = ({customers,products}) => {
     const handleChange=(item)=>{
         const result=item.value
         setSelectTerm(item)
-        sortData(result)
-    }
-
-    const sortData=(term)=>{
-        if(term==="asc"){
-            const result=data.sort((a,b)=>a.total-b.total)
-            setData(result)
-        }
-        else if(term==="date"){
-           const result=data.sort((a,b)=>{
-               return new Date(a.date)-new Date(b.date)
-           }) 
-           setData(result)
-        }
-        else if(term==="dateDsc"){
-            const result=data.sort((a,b)=>{
-                return new Date(b.date)-new Date(a.date)
-            })
-            setData(result)
-
-        }
-        else{
-            const result=data.sort((a,b)=>b.total-a.total)
-            setData(result)
-        }
+      
     }
   //Searching 
   const handleSearchChange=(e)=>{
@@ -83,13 +59,6 @@ const BillsList = ({customers,products}) => {
     })
     setData(finalResult)
   }
-
-  const options=[
-      { value:"asc", label:"Price ASC"},
-      { value:"desc",label:"Price DSCE"},
-      {value:'date',label:"Sort by Date"},
-      {value:'dateDsc',label:'Sort By Date DESN'}
-  ]
   const styleSelect={
       padding:'20px'
   }
@@ -99,35 +68,22 @@ const BillsList = ({customers,products}) => {
             <TableContainer style={{marginLeft:'70px'}}>
              
              <br/>
-                 <Paper style={{textAlign:'center'}}>
-                                 <h1>Total Bills-{data.length}</h1>
-                                 <br/>
+                 <Paper style={{textAlign:'center' , padding:"10px" , backgroundColor:"black" , color:"white" }}>
+                                 <h1>Total Bills - {data.length}</h1>
+                                
                 </Paper>
              <br/>
-          
-             <label id="orderBy">Order By</label>
-             <Grid container spacing={3}>
-                       
-                       <Grid item xs={6}>
-
-                                <Select
-                                     value={selectTerm}
-                                     placeholder="Select the term"
-                                     onChange={handleChange}
-                                     options={options}
-                                 />
-                       </Grid>
+             
+                
 
                          <Grid item xs={6}>        
                                  <Input 
                                          type="text" 
-                                        
                                           styles={styleSelect}
                                           value={searchTerm} 
                                           placeholder="Enter name to search" 
-                                          onChange={handleSearchChange}/><br/>                            </Grid>
-
-                          </Grid>
+                                          onChange={handleSearchChange}/><br/>                            
+                                          </Grid>                       
             
                  <br/><br/>
                  {
@@ -135,8 +91,7 @@ const BillsList = ({customers,products}) => {
                   ?
                  <>
                          <div style={{textAlign:'center'}}>
-                             <img src="https://icons8.com/preloaders/preloaders/1474/Walk.gif" alt="loaded"/>
-                             <h1>Data not found</h1>
+                             <h1>Generate Bill...</h1>
                          </div>
                  </>
                   :
