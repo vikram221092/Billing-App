@@ -17,12 +17,13 @@ const Products = () => {
     const classes = useStyles();
 
     return (
-        <div style={{margin:'20px'}}>
+        <div style={{margin:'20px', marginLeft:"60px"}}>
         <Grid container >                
             <Grid item xs={12} sm={8}>
                      <ProductsList/>
             </Grid>
-            <Grid item >
+
+            <Grid item xs={12} sm={4} >
                 <Box className={classes.paper}> 
                     <AddProducts/>
                 </Box>

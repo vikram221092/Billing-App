@@ -2,10 +2,10 @@ import React , { useEffect , useState } from 'react'
 import { useDispatch , useSelector } from 'react-redux'
 import { TableContainer,Table,TableCell,TextField,TableHead,Grid,TableRow,TableBody,Paper } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import SearchIcon from '@material-ui/icons/Search'
 import { getAllProducts } from '../../REDUX/Actions/productsActions'
-import Select from 'react-select'
 import ProductsListItems from './ProductsListItems'
-import { sortByName,sortByDescName,sortByPrice,sortByPriceDenc,SearchFunction } from './Search'
+import {SearchFunction } from './Search'
 
 const useStyles = makeStyles({
     table: {
@@ -52,6 +52,7 @@ const ProductsList = () => {
                  
                  <Grid container spacing={3}>
                       <Grid item xs={6}>
+                        <SearchIcon/>
                           <TextField 
                             placeholder="Search Products Here"
                            type="text" 

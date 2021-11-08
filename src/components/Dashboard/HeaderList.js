@@ -4,7 +4,7 @@ import { Grid , Paper } from '@material-ui/core'
 const HeaderList = ({classes,allCustomers,allProducts,allBills,totalAmount}) => {
     return (
         <div>
-            <Grid container>
+            <Grid container spacing={2} >
                       <Grid item xs={3} sm={3} >
                         <Paper className={classes.paper}>
                         <h1>Customers</h1>  <br/><br/>

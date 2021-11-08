@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
 import validator from 'validator'
-import { Button , TextField } from '@material-ui/core'
+import { Button , TextField , Footer } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 
 const UserLogin = ({formSubmission }) => {

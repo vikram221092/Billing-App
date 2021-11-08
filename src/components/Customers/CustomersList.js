@@ -3,6 +3,7 @@ import { useDispatch , useSelector } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles'
 import { TextField ,TablePagination,TableContainer,Paper,Table,TableRow,TableBody,Box, TableCell, TableHead, Grid } from '@material-ui/core'
 import {  SearchFunction } from './Search'
+import SearchIcon from '@material-ui/icons/Search'
 import CustomersListItem from './CustomersListItem'
 import { allCustomerListAction } from '../../REDUX/Actions/customersActions'
 
@@ -59,14 +60,16 @@ const CustomersList = (props) => {
 
     return (
         <div style={{marginLeft:'50px'}} >
-                                <Paper style={{textAlign:'center',padding:"8px" , backgroundColor:"black" , color:"white" }}>
+                                <Paper style={{textAlign:'center',padding:"10px" , backgroundColor:"black" , color:"white" }}>
                    <h1>Total Customers - {data.length}</h1>
                 </Paper>
                 <br/>
                 <Grid container spacing={3}>
                   
                     <Grid item xs={6}>
+                    <SearchIcon/>
                         <TextField  placeholder="Search Customers Here" type="text" value={search} onChange={handleSearchChange} />
+                        
                     </Grid>   
                 </Grid>
                 <br/>

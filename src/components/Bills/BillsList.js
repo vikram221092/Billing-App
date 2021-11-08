@@ -4,7 +4,7 @@ import { getAllBillsAction } from '../../REDUX/Actions/billsActions'
 import { useDispatch , useSelector } from 'react-redux'
 import { Table,TableContainer,Input,Paper,TableHead,TableRow,TableBody,Grid,TableCell } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import Select from 'react-select'
+import SearchIcon from '@material-ui/icons/Search'
 
 const useStyles = makeStyles({
     table: {
@@ -76,12 +76,13 @@ const BillsList = ({customers,products}) => {
              
                 
 
-                         <Grid item xs={6}>        
+                         <Grid item xs={6}>       
+                         <SearchIcon/> 
                                  <Input 
                                          type="text" 
                                           styles={styleSelect}
                                           value={searchTerm} 
-                                          placeholder="Enter name to search" 
+                                          placeholder="Enter name to search Bill" 
                                           onChange={handleSearchChange}/><br/>                            
                                           </Grid>                       
             

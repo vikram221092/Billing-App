@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
     },
     paper: {
-      padding: theme.spacing(2),
+      padding: theme.spacing(10),
       textAlign: 'center',
        },
   }));
@@ -47,12 +47,8 @@ const useStyles = makeStyles((theme) => ({
                     <Box className={classes.paper} id="child">
                         <h1>LOGIN</h1><br/>
                         <UserLogin formSubmission={formSubmission}/> 
-                    <hr style={{margin:'10px'}}/>
-                    <p style={{color:'black',margin:'10px'}}>Login Details: Email:BillingApp@gmail.com and password:123456</p>
                     </Box>
-
                 </Grid>
-
             </Grid>  
         </div>
     )
