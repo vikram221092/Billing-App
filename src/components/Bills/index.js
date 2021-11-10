@@ -6,6 +6,7 @@ import AddBill from './AddBill'
 import BillsList from './BillsList'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid , Box } from '@material-ui/core'
+import Footer from '../Home/Footer'
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -43,6 +44,7 @@ const Bills = (props) => {
                 </Box> 
             </Grid>
             </Grid>
+            <Footer/>
         </div>
     )
 }

@@ -5,6 +5,7 @@ import { registerAction } from '../../REDUX/Actions/userAction'
 import Swal from 'sweetalert2'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid , Box } from '@material-ui/core'
+import Footer from '../Home/Footer'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,6 +51,7 @@ const Register = (props) => {
                     </Box>
                 </Grid>
             </Grid>    
+            <Footer/>
         </div>
     )
 }

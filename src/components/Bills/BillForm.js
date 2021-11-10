@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import { Button,Dialog,DialogTitle,Input,TableRow,TableCell,TableBody,TableContainer,Table,TableHead,FormControl,DialogContent,Box,DialogActions } from '@material-ui/core'
 import Select from 'react-select'
 import CartItem from './CartItem'
+import shopcart from '../../shopcart.png'
 import DownloadBill from './DownloadBill'
 
 
@@ -145,7 +146,7 @@ const BillForm = ({customers,products,formSubmission,resetForm,isSaved}) => {
                 setErrorObj(errors)
             }
        } 
-       //for modal
+
 
         const handleClickOpen = () => {
             setOpen(true);
@@ -165,7 +166,7 @@ const BillForm = ({customers,products,formSubmission,resetForm,isSaved}) => {
 
     return (
         <div>
-            <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+            <Button variant="contained" color="secondary" onClick={handleClickOpen}>
                     Generate Bill Here
                 </Button>
                  <Dialog fullWidth={true} maxWidth={'md'}   open={open} onClose={handleClose} style={{padding:'20px'}}>
@@ -216,13 +217,13 @@ const BillForm = ({customers,products,formSubmission,resetForm,isSaved}) => {
                                         <br/>
                                         <hr/>
                                             <DialogActions>
-                                                    <Button onClick={handleReset} variant="contained"  color="secondary">
+                                                    <Button onClick={handleReset} variant="outlined"  >
                                                         Reset
                                                     </Button>
                                                     <Button onClick={handleClose} color="primary">
                                                         Cancel
                                                     </Button>
-                                                    <Button  variant="outlined"  onClick={handleClose} type="submit" color="primary">
+                                                    <Button  variant="contained" color="secondary" onClick={handleClose} type="submit" color="primary">
                                                         add Bill
                                                     </Button> 
                                             </DialogActions>      
@@ -231,8 +232,8 @@ const BillForm = ({customers,products,formSubmission,resetForm,isSaved}) => {
                             <TableContainer>
                                  {
                                   lineItems.length===0 ?
-
-                                    <img style={{height:'400px',textAlign:'center',width:'400px',objectFit:'contain'}} src={`https://image.freepik.com/free-vector/add-cart-concept-illustration_114360-1435.jpg`} alt="No Carts Items"/>    
+                                 
+                                    <img style={{height:'400px',textAlign:'center',width:'640px',objectFit:'contain'}} src={shopcart}alt="No Carts Items"/>   
                                 :<>
                                   <Table>
                                   <TableHead>

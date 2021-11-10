@@ -3,6 +3,7 @@ import { Box , Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import AddProducts from './AddProducts'
 import ProductsList from './ProductsList'
+import Footer from '../Home/Footer'
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -17,6 +18,7 @@ const Products = () => {
     const classes = useStyles();
 
     return (
+        <div>
         <div style={{margin:'20px', marginLeft:"60px"}}>
         <Grid container >                
             <Grid item xs={12} sm={8}>
@@ -30,6 +32,8 @@ const Products = () => {
             </Grid>
         </Grid>
 
+    </div>
+    <Footer/>
     </div>
     )
 }

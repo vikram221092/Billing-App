@@ -6,6 +6,7 @@ import { getAllBillsAction } from '../../REDUX/Actions/billsActions'
 import HeaderList from './HeaderList'
 import { Container } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import Footer from '../Home/Footer'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -54,6 +55,7 @@ const Dashboard = () => {
 
 
     return (
+      <div>
         <div className={classes.root} >
              <Container maxWidth="lg" style={{marginTop:'50px'}}>
               <HeaderList totalAmount={totalAmount} 
@@ -70,7 +72,12 @@ const Dashboard = () => {
               
              
           </Container>
+
+    
         </div>
+        <Footer/>
+        </div>
+      
     )
 }
 

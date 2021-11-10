@@ -5,6 +5,7 @@ import { loginAction } from "../../REDUX/Actions/userAction";
 import { useDispatch } from "react-redux";
 import { Grid ,Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import Footer from "../Home/Footer";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -50,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
                     </Box>
                 </Grid>
             </Grid>  
+            <Footer/>
         </div>
     )
   }
