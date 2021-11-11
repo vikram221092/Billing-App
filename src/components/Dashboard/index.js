@@ -6,6 +6,7 @@ import { getAllBillsAction } from '../../REDUX/Actions/billsActions'
 import HeaderList from './HeaderList'
 import { Container } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
+import ChartTable from 'chart.js'
 import Footer from '../Home/Footer'
 
 const useStyles = makeStyles((theme) => ({
@@ -64,15 +65,7 @@ const Dashboard = () => {
                     allProducts={allProducts}
                     classes={classes}
               />
-              {/* <TabsComponent 
-                   allCustomers={allCustomers}
-                   allBills={allBills}
-                   allProducts={allProducts}
-              /> */}
-              
-             
           </Container>
-
     
         </div>
         <Footer/>

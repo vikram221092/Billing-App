@@ -16,8 +16,6 @@ const BillsList = ({customers,products}) => {
 
     const dispatch=useDispatch()
     const [data,setData]=useState([])
-    const [selectTerm,setSelectTerm]=useState('')
-
 
     const [searchTerm,setSearchTerm]=useState('')
 
@@ -35,11 +33,7 @@ const BillsList = ({customers,products}) => {
     setData([...bills]) 
     },[bills])
 
-    const handleChange=(item)=>{
-        const result=item.value
-        setSelectTerm(item)
-      
-    }
+    
   //Searching 
   const handleSearchChange=(e)=>{
 

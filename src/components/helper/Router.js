@@ -11,6 +11,7 @@ import Dashboard from '../Dashboard/index'
 import Customers from '../Customers/index'
 import Products from '../Products/index'
 import Bills from '../Bills/index'
+import Account from "./Account";
 import PageNotFound from './PageNotFound'
 
 const Router = (props) => {
@@ -23,7 +24,7 @@ const Router = (props) => {
 
     const LinkStyle={
         color:'white',
-        margin:'42px',
+        margin:'26px',
         textDecoration:'none',
         fontSize:"24px",
     }
@@ -58,7 +59,8 @@ const Router = (props) => {
                                 <Link style={LinkStyle} to="/customers">Customers</Link>
                                 <Link style={LinkStyle} to="/products">Products</Link> 
                                 <Link style={LinkStyle} to="/bills">Bills</Link>
-                                  
+                                <Link style={LinkStyle} to="/account">Account</Link>
+
                                 <Link style={LinkStyle} onClick={()=>{
                                     localStorage.removeItem('token')
                                     props.history.push('/')
@@ -84,6 +86,7 @@ const Router = (props) => {
                         <Route path="/customers" component={Customers} exact/>
                         <Route path="/products" render={(props)=><Products {...props}/> } exact/>
                         <Route path="/bills" component={Bills} exact/>  
+                        <Route path="/account" component={Account} exact />
                         <Route component={PageNotFound} />
                     </Switch>
                     :

@@ -52,8 +52,9 @@ const useStyles = makeStyles((theme) => ({
                 </Grid>
             </Grid>  
             
-           <h3 style={{marginLeft:"580px"}}>Email - demo1234@gmail.com</h3>
-           <h3 style={{marginLeft:"580px"}}>Password - demo1234</h3>
+            <h3 style={{marginLeft:"580px"}} >Demo Email and Password</h3>
+           <p style={{marginLeft:"580px"}}>Email - vicky1234@gmail.com</p>
+           <p style={{marginLeft:"580px"}}>Password - vicky1234</p>
           
             <Footer/>
         </div>
