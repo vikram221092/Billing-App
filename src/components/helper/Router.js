@@ -11,7 +11,7 @@ import Dashboard from '../Dashboard/index'
 import Customers from '../Customers/index'
 import Products from '../Products/index'
 import Bills from '../Bills/index'
-import Account from "./Account";
+import Profile from "../Account/Profile";
 import PageNotFound from './PageNotFound'
 
 const Router = (props) => {
@@ -86,7 +86,7 @@ const Router = (props) => {
                         <Route path="/customers" component={Customers} exact/>
                         <Route path="/products" render={(props)=><Products {...props}/> } exact/>
                         <Route path="/bills" component={Bills} exact/>  
-                        <Route path="/account" component={Account} exact />
+                        <Route path="/account" component={Profile} exact />
                         <Route component={PageNotFound} />
                     </Switch>
                     :

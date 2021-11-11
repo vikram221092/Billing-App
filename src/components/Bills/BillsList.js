@@ -62,7 +62,7 @@ const BillsList = ({customers,products}) => {
             <TableContainer style={{marginLeft:'70px'}}>
              
              <br/>
-                 <Paper style={{textAlign:'center' , padding:"10px" , backgroundColor:"black" , color:"white" }}>
+                 <Paper style={{textAlign:'center' , backgroundColor:"black" , color:"white" }}>
                                  <h1>Total Bills - {data.length}</h1>
                                 
                 </Paper>

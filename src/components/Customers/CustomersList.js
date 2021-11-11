@@ -60,7 +60,7 @@ const CustomersList = (props) => {
 
     return (
         <div style={{marginLeft:'50px'}} >
-                                <Paper style={{textAlign:'center',padding:"10px" , backgroundColor:"black" , color:"white" }}>
+                                <Paper style={{textAlign:'center', backgroundColor:"black" , color:"white" }}>
                    <h1>Total Customers - {data.length}</h1>
                 </Paper>
                 <br/>
