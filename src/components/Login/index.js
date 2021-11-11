@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
     },
     paper: {
-      padding: theme.spacing(10),
+      padding: theme.spacing(5),
       textAlign: 'center',
        },
   }));
@@ -51,6 +51,10 @@ const useStyles = makeStyles((theme) => ({
                     </Box>
                 </Grid>
             </Grid>  
+            
+           <h3 style={{marginLeft:"580px"}}>Email - demo1234@gmail.com</h3>
+           <h3 style={{marginLeft:"580px"}}>Password - demo1234</h3>
+          
             <Footer/>
         </div>
     )

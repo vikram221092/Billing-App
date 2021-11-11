@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
 import validator from 'validator'
-import { Button , TextField , Footer } from '@material-ui/core'
+import { Button , TextField} from '@material-ui/core'
 import { Link } from 'react-router-dom'
 
 const UserLogin = ({formSubmission }) => {
@@ -59,7 +59,7 @@ const UserLogin = ({formSubmission }) => {
                            name="email" 
                            value={email} 
                            onChange={handleChange} 
-                           placeholder="Enter Email"/>
+                           placeholder="Enter Email"/> 
                            <br/>
                 <span>{errorObj.email && <span style={{color:'red'}}>{errorObj.email}</span>}</span>
                 <br/>
@@ -71,7 +71,7 @@ const UserLogin = ({formSubmission }) => {
                            onChange={handleChange} 
                            placeholder="Enter Password" /><br/>
                 <span>{errorObj.password && <span style={{color:'red'}}>{errorObj.password}</span>}</span>
-                <br/>
+                <br/><br/>
                 <Button type="submit" variant="contained" color="secondary">
                     Login
                 </Button>

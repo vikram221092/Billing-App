@@ -142,7 +142,7 @@ const UserInfo = ({formSubmission,handleIsSaved,isSaved}) => {
                            placeholder="Enter Address"/><br/>
                 <span>{errorObj.address && <span style={{color:'red'}}>{errorObj.address}</span>}</span>
                
-                <br/>
+                <br/> <br/>
                 <Button type="submit" variant="contained" color="secondary">
                     Register
                 </Button><br/>
