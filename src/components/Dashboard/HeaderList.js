@@ -1,33 +1,28 @@
 import React from 'react'
 import { Grid , Paper } from '@material-ui/core'
 
-const HeaderList = ({classes,allCustomers,allProducts,allBills,totalAmount}) => {
+const HeaderList = ({classes,allCustomers,allProducts,totalAmount}) => {
     return (
-        <div >
-            <Grid container spacing={2} >
-                      <Grid item xs={3} sm={3}  >
+        <div style = {{marginLeft:"200px"}} >
+            <Grid container spacing={4} >
+                      <Grid item xs={2} sm={3}  >
                         <Paper className={classes.paper}>
-                        <h1>Customers</h1>  <br/><br/>
-                           <h3> {allCustomers.length}</h3>
+                        <h2 style = {{fontSize:"30px" , marginBottom:"20px"}} >Customers</h2> 
+                           <h2> {allCustomers.length}</h2>
                           </Paper>
                       </Grid>
 
                       <Grid item xs={3} sm={3}>
                         <Paper className={classes.paper}>
-                        <h1>Products</h1> <br/> <br/>
-                           <h3>{allProducts.length}</h3> 
+                        <h2 style = {{fontSize:"30px" , marginBottom:"20px"}} >Products</h2>
+                           <h2>{allProducts.length}</h2> 
                         </Paper>
                       </Grid>
+                    
                       <Grid item xs={3} sm={3}>
                         <Paper className={classes.paper}>
-                         <h1>Bills</h1> <br/><br/>
-                          <h3>{allBills.length}</h3>
-                        </Paper>
-                      </Grid>
-                      <Grid item xs={3} sm={3}>
-                        <Paper className={classes.paper}>
-                        <h1>Amount</h1> <br/><br/>
-                          <h3>{totalAmount()}</h3>
+                        <h2 style = {{fontSize:"30px" , marginBottom:"20px"}} >Total Amount</h2>
+                          <h2>{totalAmount()}</h2>
                         </Paper>
                       </Grid>
                 </Grid>
