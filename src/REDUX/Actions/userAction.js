@@ -25,6 +25,7 @@ export const registerAction=(formData,successMessage,setSavedDetails,moveLink)=>
            })
     }
 }
+
 export const loginAction=(formData,moveLink,successMessage,errorMessage,handleLoginStatus)=>{
    
     return (dispatch)=>{

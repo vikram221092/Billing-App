@@ -1,12 +1,14 @@
 import React from 'react'
+import Img from './Img'
 import Footer from './Footer'
-import './style.css'
+
+
 
 const Home = (props) => {
     return (
-        <div>
-        <div className = "bg" > 
-        </div>
+       
+        <div  > 
+        <Img/>
         <Footer/>
         </div>
     )

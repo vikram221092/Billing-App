@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaPhoneAlt,FaMailBulk } from 'reac
 
 const Footer = (props) => {
     return (
-        <div style = {{backgroundColor:"black" , display:"flex" , alignItems:"center" , marginTop:"40px",marginBottom:"20px" , position:"static"}} >
+        <div style = {{backgroundColor:"black" , display:"flex" , alignItems:"center" , marginTop:"20px" , position:"static" , boxShadow:" rgba(14, 30, 37, 0.5) 0px 2px 4px 2px, rgba(14, 30, 37, 0.5) 0px 2px 16px 0px"}} >
             <div style = {{alignItems:"flex-start"}}>
             <h6  style = {{color:"white" ,  marginLeft:"64px" , marginTop:'16px' , padding:"10px", fontSize:"24px"}} >Contact Me</h6>
             <p style = {{color:"white" ,  marginLeft:"64px" , padding:"5px", fontSize:"16px"}} ><FaPhoneAlt /> 9590022344</p>

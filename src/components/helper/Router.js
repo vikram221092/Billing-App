@@ -32,7 +32,7 @@ const Router = (props) => {
         color:'white',
         margin:'50px',
         textDecoration:'none',
-        fontSize:"26px",
+        fontSize:"28px",
     }
       useEffect(()=>{
           if(localStorage.getItem('token')){

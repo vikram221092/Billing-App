@@ -25,6 +25,7 @@ export const addCustomerAction=(formData,successMessage,setResetFormHandle)=>{
         })
     }
 }
+
 export const allCustomerListAction=()=>{
 
        return (dispatch)=>{
