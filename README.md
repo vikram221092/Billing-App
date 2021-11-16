@@ -1,23 +1,10 @@
-# Getting Started with Create React App
+# Project
+Billing Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### Demo
+## Demo
 
 
-Demo (https://practical-curran-9b7164.netlify.app/)
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can see Live Demo here [Demo](https://practical-curran-9b7164.netlify.app/)
 
 ### `npm run build`
 
