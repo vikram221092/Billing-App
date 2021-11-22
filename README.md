@@ -1,57 +1,84 @@
-# Project
-Billing Application
+# BILLING-APP
 
-## Demo
+## Tech Stack
+- JavaScript [ES-6]
+- React JS
+- Redux & Redux-Thunk
+- Git
+## Packeges
+- Materail-ui
+- Meterial-ICON
+- axios
+- lodash
+- moment
+- React-router-dom
+- react-select
+- React-tabs
+- React-to-pdf
+- react-typing-effect
+- Rechart
+- redux
+- uuid
+- validator
+- sweetalert2
 
-
+## Live Demo
 You can see Live Demo here [Demo](https://practical-curran-9b7164.netlify.app/)
 
-### `npm run build`
+## Demo Images
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Demo Video
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
+- Authentication
 
-### `npm run eject`
+     - User registration and login
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+     - JWT is maintained for authentication
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+     - Private and protected routing is implemented
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+     - Custom form validation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Customer
 
-## Learn More
+     -  Logged in user can add customers by providing name, mobile number and email.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+     -  Customer details can be viewed as well as edited.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+     -  Customer can also be deleted but it is not recommendable to delete a customer.
 
-### Code Splitting
+     -  Validation is implemented for customer add and edit.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Product
 
-### Analyzing the Bundle Size
+     -  User can add products providing product name and price.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+     -  Product details can be edited.
 
-### Making a Progressive Web App
+     -  Product can also be deleted but it is not advisable to delete product.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+     -  Validation is implemented for product add and edit.
 
-### Advanced Configuration
+- Bills
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+     -  User can create bill for a customer by providing date.
 
-### Deployment
+     -  Product can be selected from the dropdown one at a time and default quantity is set to 1.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+     -  Once added to cart, user can add other products also.
 
-### `npm run build` fails to minify
+     -  The product can be removed from the cart.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+     -  Once the bill is generated, the bill can be downloaded as pdf.
+
+     -  Validation is implemented
+
+- Dashboard
+
+     -  All the total number of customers, products and total revenue is provided.
+
+- Graph
+
+     -  Bar chart is implemented for showcasing week total sales and last six months total sales.
