@@ -27,6 +27,7 @@ You can see Live Demo here [Demo](https://practical-curran-9b7164.netlify.app/)
 
 ## Demo Images
  - Home Page![Home Page](https://user-images.githubusercontent.com/75414967/142910921-2f723ff0-43c9-4220-8a8f-78755a468387.png)
+ - Register Page ![Register Page](https://user-images.githubusercontent.com/75414967/142913126-c8b442fd-92ca-420e-a111-c00f97269e2a.png)
 
 ## Demo Video
 
