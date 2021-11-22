@@ -31,6 +31,7 @@ You can see Live Demo here [Demo](https://practical-curran-9b7164.netlify.app/)
  - Login Page ![Login Page](https://user-images.githubusercontent.com/75414967/142913315-27c6cc07-7279-4838-9272-b5a01d5bfec2.png)
  - Dashboard ![Dashboard](https://user-images.githubusercontent.com/75414967/142913478-dd062b87-dc68-40ec-9275-0bab297af34d.png)
  - Customers Page ![Customers Page](https://user-images.githubusercontent.com/75414967/142913685-029008e4-cebf-4509-bf4c-60d71235dc26.png)
+ - Products Page ![Products Page](https://user-images.githubusercontent.com/75414967/142913884-1b9ae7c4-6a8a-4a3d-a30b-52729b9db2f3.png)
 
 ## Demo Video
 
