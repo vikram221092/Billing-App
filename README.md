@@ -33,6 +33,7 @@ You can see Live Demo here [Demo](https://practical-curran-9b7164.netlify.app/)
  - Customers Page ![Customers Page](https://user-images.githubusercontent.com/75414967/142913685-029008e4-cebf-4509-bf4c-60d71235dc26.png)
  - Products Page ![Products Page](https://user-images.githubusercontent.com/75414967/142913884-1b9ae7c4-6a8a-4a3d-a30b-52729b9db2f3.png)
  - Bills Page ![Bills Page](https://user-images.githubusercontent.com/75414967/142914046-8844ec15-99cf-42ae-b02f-f7adab4c5465.png)
+ - Bill Generate ![Bill Generate](https://user-images.githubusercontent.com/75414967/142914272-c5501128-9094-4a36-b84b-daf3df00a7a0.png)
 
 ## Demo Video
 
