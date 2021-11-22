@@ -42,7 +42,7 @@ const Router = (props) => {
 
     return (
         <div>
-                <AppBar position="static" color= "secondary" >
+                <AppBar position="static" color = "primary" >
                 <Toolbar>
                 <Typography variant="h6" style={{flexGrow:1}}>
                     
