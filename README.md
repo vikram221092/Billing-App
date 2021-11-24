@@ -54,8 +54,6 @@ You can see Live Demo here [Demo](https://practical-curran-9b7164.netlify.app/)
 #### Profile Page    
   <img src = https://user-images.githubusercontent.com/75414967/142914469-8969876a-2a79-4291-8f2c-4f766b6c469b.png width = "500" /> 
   
- 
-## Demo Video
 
 ## Features
 - Authentication
