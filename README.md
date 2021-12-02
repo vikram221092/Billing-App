@@ -1,4 +1,5 @@
 # BILLING-APP
+A web application where users can Register and Login, After Login Authenticated users will be able to Add, Update or Delete the details of customers, products and bills.
 
 ## Tech Stack
 - JavaScript [ES-6]
